@@ -2,9 +2,24 @@
     display: block;
     margin: 0 0 96px 0;
 
+    @include vp-1023 {
+        margin: 0 0 32px 0;
+    }
+
     &__content {
         display: flex;
         width: 100%;
+
+        @media(max-width: 730px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        @media(max-width: 480px) {
+            flex-direction: column;
+            gap: 32px;
+        }
     }
 
     &__left {
@@ -15,6 +30,20 @@
         @media(max-width:1023px) {
             margin-right: 100px;
         }
+
+        @media(max-width:900px) {
+            margin-right: auto;
+        }
+
+        @media(max-width: 730px) {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        @media(max-width: 480px) {
+            margin: 0;
+        }
     }
 
     &__logo {
@@ -22,6 +51,10 @@
         gap: 10px;
         align-items: center;
         margin: 0 0 17px 0;
+
+        @media(max-width: 480px) {
+            margin: 0 0 24px 0;
+        }
     }
 
     &__logo-name {
@@ -60,6 +93,11 @@
         font-size: 18px;
         line-height: 150%;
         color: $color-black;
+
+        @media(max-width: 480px) {
+            font-size: 16px;
+            line-height: 140%;
+        }
     }
 
     &__middle {
@@ -68,7 +106,21 @@
         margin-right: 130px;
 
         @media(max-width:1023px) {
-         margin-right: 90px;   
+            margin-right: 90px;
+        }
+
+        @media(max-width:900px) {
+            margin-right: auto;
+        }
+
+        @media(max-width: 730px) {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        @media(max-width: 480px) {
+            margin: 0;
         }
     }
 
@@ -79,6 +131,10 @@
         color: $color-dark-apple;
         margin: 0 0 24px 0;
         padding: 0;
+
+        @media(max-width: 730px) {
+            text-align: center;
+        }
     }
 
     &__form-flex {
@@ -133,6 +189,15 @@
         border: none;
         background-color: $color-green-apple;
         color: $color-white;
+        border: solid 1px $color-green-apple;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: scale(1);
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-green-apple;
+            transform: scale(1.1)
+        }
     }
 
     &__right {
@@ -163,13 +228,18 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
-        list-style-type:none;
+        list-style-type: none;
     }
 
     &__link {
         font-size: 18px;
         line-height: 150%;
-        color:$color-black;
+        color: $color-black;
+
+        @media(max-width: 480px) {
+            font-size: 16px;
+            line-height: 140%;
+        }
     }
 
     &__social {

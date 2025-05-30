@@ -36,10 +36,15 @@
             justify-content: center;
         }
 
+        @media(max-width: 890px) {
+            gap: 20px;
+        }
+
         @media(max-width:480px) {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, auto);
+            margin: 0 0 48px 0;
           }
     }
 
@@ -59,7 +64,22 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            padding: 16px;
+            
         }
+
+        @media(max-width:880px) {
+            max-width: 360px;  
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
+        }
+
     }
 
     &__cards-item-2 {
@@ -78,6 +98,21 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            grid-row: 5;
+            padding: 16px;
+        }
+
+        @media(max-width:880px) {
+            max-width: 360px;
+            padding: 16px;  
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
         }
     }
 
@@ -97,6 +132,22 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            grid-row: 6;
+            padding: 16px;
+        }
+
+        @media(max-width:880px) {
+            max-width: 360px;
+            padding: 16px;
+            
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
         }
     }
 
@@ -116,6 +167,22 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            grid-row: 1;
+            padding: 16px;
+        }
+
+        @media(max-width:880px) {
+            max-width: 360px;
+            padding: 16px;
+            
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
         }
     }
 
@@ -135,6 +202,22 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            grid-row: 2;
+            padding: 16px;
+        }
+
+        @media(max-width:880px) {
+            max-width: 360px;
+            padding: 16px;
+            
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
         }
     }
 
@@ -154,6 +237,22 @@
 
         @media(max-width:1023px) {
             max-width: 400px;
+            grid-row: 3;
+            padding: 16px;
+        }
+
+        @media(max-width:880px) {
+            max-width: 360px;
+            padding: 16px;
+            
+        }
+
+        @media(max-width:800px) {
+            max-width: 320px;
+        }
+
+        @media(max-width:700px) {
+            max-width: 430px;
         }
     }
 
@@ -163,6 +262,10 @@
         font-weight: 700;
         margin: 0 0 10px 0;
         padding: 0;
+
+        @media(max-width: 480px) {
+            font-size: 20px;
+        }
     }
 
     &__list {
@@ -228,6 +331,10 @@
             height: 1px;
             background-color: $color-green-apple;
             top: -18px;
+
+            @media(max-width: 1023px) {
+                width: 248px;
+            }
         }
     }
 }

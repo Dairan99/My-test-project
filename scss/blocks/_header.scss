@@ -154,13 +154,31 @@
     background-color: $color-white;
     color: $color-green-apple;
     border: solid 1px $color-green-apple;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1);
+    
+
+    &:hover {
+      background-color: $color-green-apple;
+      color: $color-white;
+      transform: scale(1.1)
+    }
 
     &--background {
-      padding: 12px 24px;
+      padding: 12px 23px;
       font-weight: 400;
       background-color: $color-green-apple;
       color: $color-white;
-      border: none;
+      border: solid 1px $color-green-apple;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: scale(1);
+    
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-green-apple;
+      transform: scale(1.1)
+    }
     }
   }
 
